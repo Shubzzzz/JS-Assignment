@@ -1,0 +1,39 @@
+1. Explore and explain the various methods in the console function, eg console.log(), console.warn().
+> console.log() : displays the message in the console of your browser
+   console.table() : displays the data in tabular format
+   console.error() : displays the error message in the console 
+   console.clear() : clear the whole console
+   console.warn() : displays a warning message in the console which has yellow color sign
+   console.time() : starts a timer which counts the time taken by the code to execute
+   console.timeEnd() : stops the timer which was started by the console.time() method
+   
+2. Difference between var,let and const keyword with example.
+> var : Basically the scope of variable with keyword "var" is within the function in which it is defined but if you define it outside the function the the scope of "var" is global. You cannot change the value of the variable which is defined with "var" keyword. 
+   e.g. : var a=10; //global variable
+           { var b=20; //function variable
+           } //block 1
+
+           { b++;  
+           } //block 2
+	/* After running it will show error as b++ cannot be excuted because it is in the second block but if we use a++ in 	block 2 then there won't be any error*/
+
+   let : The scope of the variable with "let" keyword is within the curly braces {}. You can change the value of the variable defined with "let" keyword.
+   e.g. : { let b=20; //block 1
+           	b=30; } // the value of "b" can be changed without using the keyword
+
+	{ b++;  
+           	} //block 2
+	/* After running it will show error as b++ cannot be excuted because it is in the second block*/
+
+   const : The scope of the variable with "const" keyword is within the curly braces {}. You cannot change the value of the variable defined with "const" keyword. 
+   e.g. : { const a="Shubham";
+	} //block 1
+	{ console.log(a); //this will throw an error as variable "a" is limited to block 1
+	a="Kamble"; // this will show an error as you cant change the value of the variable having "const" keyword.
+
+3.Write a brief info on available data types in javascript.
+> Integer : var age = 22;
+   String : 	var name = "Shubham";
+   Object : JavaScript objects are written with curly braces {}. Object properties are written as name:value pairs, separated by 	commas.
+	e.g. : var car = {carname:"Honda", color:"black"};
+   Array : 	var fruits = ["Banana", "Mango", "Apple"];
