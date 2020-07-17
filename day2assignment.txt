@@ -1,0 +1,20 @@
+Q2. Explain with examples the remaining methods of String and Array.
+> String methods :
+1.concat() : It joins two strings and outputs a new string.
+2.includes() : This methods determine if the string contains the specified string and returns true if the string is present or else false.
+3.repeat() : It makes the specified number of copies of the string and returns a new string.
+4.replace() : It searches for the specified string and replace it with the new string mentioned, if you want to replace every instance of the string then use a global (g) modifier.
+5.search() : It searches for the specified string and returns the position of the matched string, returns -1 if the string is not present.
+6.slice() : It extracts the part of the string for which we have specified the start and end index, you can use negative numbers to start from the end of string.
+7.substring() : It extracts the part of the string for which we specify the start and end index and returns the extracted characters but it doesn't change the main string, if start index is greater than end index, this method will swap between the two index values.
+
+Array methods :
+1.concat() : It joins two or more strings and outputs a new string.
+2.copyWithin() : this method copy the array elements for which we specify the start and end index to target index, it directly replaces the elements. Syntax a.copyWithin(target,start,end);
+3.fill() : It replaces specified elements in the array with a static value for which we have to specify the start and end date.
+4.includes() : It determines whether an array contains a specified element, returns true if array contains the element or else false.
+5.join() : returns the array as string and the elements are separated using the separator we specify.
+6.length() : returns the length of an array.
+7.map() : creates a new array with the results of calling a function for every array element. 
+8.slice() : returns a new array by selecting the elements from the original array and start and end indexes are specified but it does not inlcude the end element.
+9.splice() : adds/removes items to/from an array and returns the removed items. syntax : array.splice(index, howmany, item1, ....., itemX);
