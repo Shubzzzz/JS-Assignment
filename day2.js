@@ -1,3 +1,4 @@
+//Question 1
 let input = prompt("What is your name ? ", "E.g. Shubham Deepak Kamble");
 console.log(input);
 
